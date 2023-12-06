@@ -25,3 +25,6 @@ setTimeout(()=>{
 }, 1500);
 
 console.log("last World");
+
+//If we write wrong code inside setTimeout it will show error for that specific line and move to next function
+//And execute it.
