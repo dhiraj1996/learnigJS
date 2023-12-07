@@ -11,9 +11,9 @@ const ticket = new Promise(function (resolve, reject){   ///I found out we can g
 });
 
 ticket.then((data) =>{
-    console.log("Wohoo " + data);  //.then takes data of resolve.
+    console.log("Wo-hoo " + data);  //.then takes data of resolve.
 }).catch((data)=>{
-    console.log("Ohno " + data);  //.catch takes data of reject.
+    console.log("Oh-no " + data);  //.catch takes data of reject.
 }).finally(()=>{
     console.log("This will always print"); //finally always get printed whether it is resolved or rejected
 });
