@@ -1,10 +1,10 @@
 // Example 1 //////////////
-console.log("Hello");
-setTimeout(()=>{
-    console.log("World2")
-}, 2000);
+// console.log("Hello");
+// setTimeout(()=>{
+//     console.log("World2")
+// }, 2000);
 
-console.log("Dhiraj");
+// console.log("Dhiraj");
 
 
 // Example 2 ///////////
