@@ -33,6 +33,7 @@ body{
 }
 
 .answer {
+    margin-top:-20px;
     padding-bottom:20px;
     color:grey;
     max-height : 0;
