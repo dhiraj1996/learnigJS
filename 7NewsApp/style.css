@@ -79,12 +79,16 @@ nav {
 }
 
 .hover-link:hover {
-    color: var(--secondary-text-color);
+    color: var(--accent-color);
     cursor: pointer;
 }
 
-.hover-link:active {
+/* .hover-link:active {
     color:red;
+} */
+
+.nav-item.active {
+    color:var(--accent-color);
 }
 
 .search-bar {
