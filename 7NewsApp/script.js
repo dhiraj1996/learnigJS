@@ -3,6 +3,10 @@ const url = "https://newsapi.org/v2/everything?q=";
 
 window.addEventListener('load', () => fetchNews("India"));
 
+function reload() {
+    window.location.reload();
+}
+
 async function fetchNews (query){
     const res = await fetch(`${url}${query}&apikey=${API_KEY}`);
     const data = await res.json();
@@ -59,3 +63,16 @@ function navItemClick(id) {
     curSelectedItem.classList.add('active');
 
 }
+
+const searchButton = document.getElementById("search-button");
+const searchText = document.getElementById("search-text");
+
+searchButton.addEventListener('click', ()=>{
+    const query = searchText.value;
+    if (!query) return;
+    fetchNews(query);
+    curSelectedItem.classList.remove("active");
+    // curSelectedItem?.classList.remove("active");
+    //check why this is taught
+    curSelectedItem = null;
+});

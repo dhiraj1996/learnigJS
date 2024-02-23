@@ -9,7 +9,7 @@
 <body>
     <nav class="">
         <div class="main-nav flex container">
-            <a href="#" class="company-logo">
+            <a href="#" onclick="reload()" class="company-logo">
                 <img src="assets/newslogo.png" alt="company logo">
             </a>
             <div class="nav-links">
@@ -21,8 +21,8 @@
                 </ul>
             </div>
             <div class="search-bar flex">
-                <input type="text" class="news-input" placeholder="eg sports">
-                <button class="search-link">Search</button>
+                <input type="text" id="search-text" class="news-input" placeholder="eg sports">
+                <button id="search-button" class="search-link">Search</button>
             </div>
         </div>
     </nav>
